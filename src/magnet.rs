@@ -5,18 +5,18 @@ use std::path::Path;
 
 #[derive(Debug, Deserialize)]
 pub struct Magnet {
-    xt:             Vec<String>;   // xt (Exact Topic) – URN containing file hash
-    xl:             i64;           // xl (Exact Length) – Size in bytes
-    as:             String;        // as (Acceptable Source) – Web link to the file online
-    xs:             Vec<String>;   // xs (eXact Source) – P2P link.
-    dn:             String;        // dn (Display Name) – Filename
-    kt:             Vec<String>;   // kt (Keyword Topic) – Key words for search
-    mt:             string;        // mt (Manifest Topic) – link to the metafile that contains a list of magneto (MAGMA – MAGnet MAnifest)
-    tr:             Vec<String>;   // tr (Address Tracker) – Tracker URL for BitTorrent downloads
-    infoHash:       string;        // Same as xt
-    infoHashBuffer: Buffer;
-    name:           string;
-    announce:       Vec<String>;
+    xt:             Vec<String>,   // xt (Exact Topic) – URN containing file hash
+    xl:             i64,           // xl (Exact Length) – Size in bytes
+    as:             String,        // as (Acceptable Source) – Web link to the file online
+    xs:             Vec<String>,   // xs (eXact Source) – P2P link.
+    dn:             String,        // dn (Display Name) – Filename
+    kt:             Vec<String>,   // kt (Keyword Topic) – Key words for search
+    mt:             string,        // mt (Manifest Topic) – link to the metafile that contains a list of magneto (MAGMA – MAGnet MAnifest)
+    tr:             Vec<String>,   // tr (Address Tracker) – Tracker URL for BitTorrent downloads
+    infoHash:       string,        // Same as xt
+    infoHashBuffer: Buffer,
+    name:           string,
+    announce:       Vec<String>,
 }
 
 #[derive(Debug)]
@@ -56,3 +56,5 @@ impl Magnet {
 
     }
 }
+
+// magnet:?xt=urn:btih:945f2e8866dbe16761f034757c5629ba9b6c66f0&dn=Smolensk.2016.DVDRip.x264-AFO&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Fzer0day.ch%3A1337&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969
