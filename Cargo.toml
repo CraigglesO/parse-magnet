@@ -1,12 +1,9 @@
 [package]
-name = "parse_torrent"
-version = "0.5.2"
-description = "Parse Bittorent .torrent files into usable structs"
+name = "parse_magnet"
+version = "0.1.0"
+description = "Parse Bittorent magnet into a usable struct"
 authors = ["craig OConnor <oconnorct1@gmail.com>"]
 repository = "https://github.com/CraigglesO/parse-torrent"
 license = "GPL-3.0"
 
 [dependencies]
-serde = "1.0.7"
-serde_derive = "0.8.22"
-serde_urlencoded = "0.5.1"
